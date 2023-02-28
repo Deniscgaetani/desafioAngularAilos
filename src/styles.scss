@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  src: url(https://fonts.gstatic.com/s/exo2/v20/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsOdC_.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format("woff2");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  box-sizing: border-box;
+  position: absolute;
+  border: 3.5px solid #165c7d;
+  background-color: #e8eff2;
+  border-radius: 100px;
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.mat-step-header .mat-step-icon-state-edit {
+  background-color: #165c7d !important;
+}
+
+.mat-step-header .mat-step-label.mat-step-label-active {
+  color: #165c7d !important;
+}
+
+.mat-step-icon-content {
+  display: none !important;
+}
+
+.mat-horizontal-content-container {
+  // padding: 0 !important;
+}
+
+.mat-horizontal-stepper-header-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 30%;
+  margin-left: 20%;
+}
+
+.mat-list-base .mat-list-item .mat-list-icon,
+.mat-list-base .mat-list-option .mat-list-icon {
+  padding: 6px !important;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #fff;
+}
+
+.custom-bread-crumb {
+  margin: 0 !important;
+  padding: 0 !important;
+}

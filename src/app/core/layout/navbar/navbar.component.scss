@@ -1,0 +1,41 @@
+.mat-drawer {
+  background-color: #165c7d;
+
+  .menu {
+    margin-top: 12px;
+
+    .mat-icon {
+      font-size: 27px;
+    }
+
+    .menu-icon {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 60px;
+      }
+    }
+  }
+}
+
+.mat-drawer-content {
+  background: #e8eff2;
+  width: 100%;
+}
+
+.mat-drawer-container {
+  height: 100vh;
+}
+
+.active {
+  color: #b3b3b3 !important;
+}
+
+mat-drawer {
+  width: 70px !important;
+}
+
+mat-icon {
+  color: #fff;
+}

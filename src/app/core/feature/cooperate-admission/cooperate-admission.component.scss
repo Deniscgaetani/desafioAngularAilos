@@ -1,0 +1,50 @@
+.container-stepper {
+  margin-bottom: 100px;
+
+  mat-stepper {
+    background: #e8eff2;
+  }
+}
+
+.footer {
+  padding: 20px 0 20px 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+
+  .admission-button {
+    margin-right: 15px;
+    width: 220px;
+    padding: 10px;
+    border: 2px solid #165c7d;
+    background-color: #165c7d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+
+    &:hover {
+      border: 2px solid #012f44;
+      background-color: #012f44;
+    }
+  }
+
+  button {
+    width: 220px;
+    padding: 10px;
+    border: 2px solid #165c7d;
+    background-color: #fff;
+    color: #165c7d;
+    cursor: pointer;
+    border-radius: 2px;
+    font-family: "Open Sans", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    &:hover {
+      border: 2px solid #023d55;
+      background-color: rgba(2, 61, 85, 0.1);
+    }
+  }
+}

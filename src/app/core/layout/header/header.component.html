@@ -1,0 +1,33 @@
+<mat-toolbar>
+  <div class="navbar">
+    <div class="text-header">
+      <span class="text-navbar"
+      >{{ "Nova admissão cooperado" | uppercase }}
+      </span>
+      <app-ng-dynamic-breadcrumb
+        [bgColor]="'#fff'"
+        [fontSize]="'11px'"
+        [lastLinkColor]="'#787878'"
+        class="breadcrumb"
+      ></app-ng-dynamic-breadcrumb>
+    </div>
+    <div class="user-menu">
+      <div class="user-notifications">
+        <button mat-icon-button aria-label="Notificações">
+          <mat-icon matBadge="7" matBadgeColor="warn">notifications</mat-icon>
+        </button>
+      </div>
+
+      <div class="user-type">
+        <div class="user-type-btn">{{ "Denis Gaetani" | uppercase }}</div>
+      </div>
+
+      <div class="user">
+        <div class="container-img">
+          <img src="/assets/images/user.jpg" alt="perfil usuário"/>
+          <mat-icon class="user-icon-img">settings</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,53 @@
+<div class="container-search">
+  <div class="header-search">
+    <div class="header-text">
+      <div class="header-title">Informe o CPF do futuro cooperado (a)</div>
+      <div class="header-subtitle">
+        Se necessário, você poderá duplicar uma conta existente ou pausar e
+        retomar este cadastro futuramente.<br />
+        Digite apenas os números (sem pontos ou traços).
+      </div>
+    </div>
+
+    <form [formGroup]="cooperateForm">
+      <div class="form-group">
+        <label for="cpf">CPF</label>
+        <input
+          type="text"
+          id="cpf"
+          formControlName="cpf"
+          class="form-control input"
+          placeholder="000.000.000-00"
+          mask="000.000.000-00"
+          (blur)="validateForm()"
+          [ngClass]="{ 'invalid-form': invalidFormCooperate }"
+        />
+        <button
+          mat-flat-button
+          color="primary"
+          (click)="findCooperate()"
+          [disabled]="spinner"
+        >
+          <div class="button-text">
+            <div *ngIf="!spinner">Consultar por CPF</div>
+            <mat-spinner *ngIf="spinner" [diameter]="20"></mat-spinner>
+          </div>
+        </button>
+      </div>
+    </form>
+    <div class="message">
+      <div *ngIf="invalidFormCooperate" class="invalid-message">
+        Informe um CPF válido
+      </div>
+    </div>
+  </div>
+  <div class="search-results">
+    <app-cooperate-details
+      *ngIf="viewCooperate"
+      [cooperate]="cooperate"
+    ></app-cooperate-details>
+    <div class="message-details">
+      <div *ngIf="invalidSearchDetails">{{ detailsMessageError }}</div>
+    </div>
+  </div>
+</div>

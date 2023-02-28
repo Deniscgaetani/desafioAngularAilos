@@ -1,0 +1,43 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" disableClose="true" opened="true">
+    <div class="menu">
+      <div class="menu-icon">
+        <img src="/assets/images/ailos.png" alt="Ailos Icon"/>
+      </div>
+
+      <div class="menu-sub-actions">
+        <mat-nav-list>
+          <mat-list-item>
+            <mat-icon class="active" mat-list-icon>menu</mat-icon>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon mat-list-icon>search</mat-icon>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon mat-list-icon>star_outline</mat-icon>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon mat-list-icon>message</mat-icon>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon mat-list-icon>tune</mat-icon>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon mat-list-icon>account_balance</mat-icon>
+          </mat-list-item>
+        </mat-nav-list>
+      </div>
+    </div>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="header-group">
+      <app-header></app-header>
+    </div>
+    <div class="container-fluid">
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

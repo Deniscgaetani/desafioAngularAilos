@@ -1,27 +1,45 @@
-# DesafioAngularAilos
+## Technologies
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.10.
+- [Node](https://nodejs.org/en/) v14.15.1.
+- [Angular](https://angular.io/docs) v14.1.1.
+- [Angular Material](https://material.angular.io) v14.1.1
+- [JSON Server](https://github.com/typicode/json-server) v0.17.0
+- [Breadcrumb](https://www.npmjs.com/package/ng-dynamic-breadcrumb) v6.0.0.
 
-## Development server
+## Getting started with Project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Realize o download do projeto Ailos, em seguida baixe as dependências/pacotes com o comando `npm install` (na pasta raiz
+da aplicação).
 
-## Code scaffolding
+É necessário rodar o comando `npm run server` na raiz do projeto para inicializar a API.
+Depois e necessário rodar o comando `npm start` para rodar a aplicação angular.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Cooperate users
 
-## Build
+["id": 1,
+"cpf": "30032360088",
+"name": "Mariane de Souza Oliveira"]
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+["id": 2,
+"cpf": "51499986726",
+"name": "Alice Sophia Lorena Nogueira"]
 
-## Running unit tests
+["id": 3,
+"cpf": "67255476805",
+"name": "Isabelle Andreia Larissa Ferreira"]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+["id": 4,
+"cpf": "65554868991",
+"name": "Raimundo Geraldo Sebastião Nogueira"]
 
-## Running end-to-end tests
+["id": 5,
+"cpf": "80605166633",
+"name": "Gabrielly Sueli Moura"]
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+["id": 6,
+"cpf": "66755080080",
+"name": "Godofedro Nunes"]
 
-## Further help
+## Author
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Denis Carlos Costa Gaetani

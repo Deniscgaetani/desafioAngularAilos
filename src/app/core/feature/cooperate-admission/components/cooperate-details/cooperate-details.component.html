@@ -1,0 +1,56 @@
+<div class="container-details">
+  <div class="cooperate-cards">
+    <mat-card>
+      <div class="header-card">
+        <mat-card-title>Situação cadastral do CPF</mat-card-title>
+        <mat-card-subtitle>Consulta na Receita Federal</mat-card-subtitle>
+      </div>
+      <div class="body-card">
+        <mat-icon class="icon">person</mat-icon>
+        <div class="cooperate">
+          <span class="label">Nome</span>
+          <span class="name">{{ cooperate.name }}</span>
+        </div>
+      </div>
+      <div class="body-card">
+        <mat-icon class="regular-situation">check_circle_outlined</mat-icon>
+        <div class="cooperate">
+          <span class="label">Situação do CPF</span>
+          <span class="name">{{ cooperate.situation }}</span>
+        </div>
+      </div>
+    </mat-card>
+    <mat-card>
+      <div class="header-card">
+        <mat-card-title>Conta aplicação</mat-card-title>
+        <mat-card-subtitle>Cooperativa Viacredi</mat-card-subtitle>
+      </div>
+      <div class="body-card">
+        <mat-icon class="icon">payment</mat-icon>
+        <div class="cooperate">
+          <span class="label">Número da conta</span>
+          <span class="name">{{ cooperate.accountNumber }}</span>
+        </div>
+      </div>
+      <div class="body-card">
+        <a>Duplicar Conta</a>
+      </div>
+    </mat-card>
+    <mat-card>
+      <div class="header-card">
+        <mat-card-title>Conta corrente</mat-card-title>
+        <mat-card-subtitle>Cooperativa Viacredi</mat-card-subtitle>
+      </div>
+      <div class="body-card">
+        <mat-icon class="icon">payment</mat-icon>
+        <div class="cooperate">
+          <span class="label">Número da conta</span>
+          <span class="name">{{ cooperate.currentAccount }}</span>
+        </div>
+      </div>
+      <div class="body-card">
+        <a>Duplicar Conta</a>
+      </div>
+    </mat-card>
+  </div>
+</div>
